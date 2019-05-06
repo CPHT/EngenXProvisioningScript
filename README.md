@@ -13,7 +13,13 @@
 
 ## How to download the script
 - *ENTER* in Terminal
-  - `git clone https://github.com/tmeserve/ProvisioningScript.git`
+
+`git clone https://github.com/tmeserve/ProvisioningScript.git`
+
+- Switch into `nocups` branch
+
+`git checkout nocups`
+
 
 <div id='requirements'/>
 
@@ -53,6 +59,7 @@
 ## Running the Script
 - *ENTER* in Terminal
   - Change into the directory of the cloned repository
+  
     - `cd user/yourName/my-project`
   - `python3.7 runner.py`
 
