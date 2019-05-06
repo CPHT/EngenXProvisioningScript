@@ -2,7 +2,7 @@
 
 ## Table of contents
 - [Download](#download)
-- [Requirements](#requirements)
+- [Prerequisites](#prereq)
 - [Mac Printer Setup](#printermac)
 - [Virtual Environment](#venv)
 - [Script Usage](#run)
@@ -14,8 +14,10 @@
 ## How to download the script
 - *ENTER* in Terminal
   - `git clone https://github.com/tmeserve/ProvisioningScript.git`
+- Switch to `nocups` branch
+  - `git checkout nocups`
 
-<div id='requirements'/>
+<div id='prereq'/>
 
 ## Prerequisites
 - Install [python 3.7.2](https://www.python.org/downloads/release/python-372/)
@@ -23,12 +25,19 @@
 - _Pip usage_
   - *ENTER* in Terminal
     - Change into the directory of the cloned repository
-      - `cd user/yourName/ProvisioningScript-nocups`
-      - Needs to be run in a [virtual environment](#venv)
-    - `pip3.7 install -r requirements.txt`
-- _Drivers_
-  - Install the [drivers](https://docs.microsoft.com/en-us/sql/connect/odbc/linux-mac/installing-the-microsoft-odbc-driver-for-sql-server?view=sql-server-2017) according to your operating system.
-- Will need an FTP server, an SQL server, and a website ready to show the logs, to store the files, and to store the notes.
+      - `cd user/yourName/EngenxProvisioningScript`
+    - Create a virtual environment in this directory
+      - `python3 -m venv .`
+    - Install required libraries
+      - `pip3.7 install -r requirements.txt`
+- _Drivers_ (macOS 10.11 - 10.14)
+  - Install the [drivers](https://docs.microsoft.com/en-us/sql/connect/odbc/linux-mac/installing-the-microsoft-odbc-driver-for-sql-server?view=sql-server-2017#os-x-1011-el-capitan-macos-1012-sierra-macos-1013-high-sierra-and-macos-1014-mojave) according to your operating system.
+    - Install Homebrew
+      - `/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"`
+    - Tap and install drivers and tools
+      - `brew tap microsoft/mssql-release https://github.com/Microsoft/homebrew-mssql-release`
+      - `brew update`
+      - `brew install msodbcsql17 mssql-tools`
 
 <div id='printermac'/>
 
