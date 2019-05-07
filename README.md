@@ -37,6 +37,8 @@
       - `brew tap microsoft/mssql-release https://github.com/Microsoft/homebrew-mssql-release`
       - `brew update`
       - `brew install msodbcsql17 mssql-tools`
+  - Install IOgear GUC232A USB to serial adapter driver (optional)
+    - https://www.iogear.com/support/dm/driver/GUC232A
 
 <div id='printermac'/>
 
