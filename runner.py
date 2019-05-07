@@ -8,6 +8,7 @@ GetDeviceByDeviceId)
 import datetime
 from printing import printlabel
 import xml.etree.ElementTree as ET
+import ftplib as ftp
 
 lastDeviceID = -1
 
