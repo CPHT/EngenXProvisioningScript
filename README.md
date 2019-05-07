@@ -25,8 +25,6 @@
 
 `git checkout nocups`
 
->>>>>>> 00541cb477d23f9ef236e11258dd7b07db77f1eb
-
 <div id='prereq'/>
 
 ## Prerequisites
