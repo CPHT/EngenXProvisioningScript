@@ -4,7 +4,6 @@
 - [Download](#download)
 - [Prerequisites](#prereq)
 - [Mac Printer Setup](#printermac)
-- [Virtual Environment](#venv)
 - [Script Usage](#run)
 - [References](#ref)
 - [Extras](#extra)
@@ -43,19 +42,6 @@
 
 ## To set up the printer on a Mac
 - *PLUG IN* the printer through the serial port to usb
-
-<div id='venv'/>
-
-## Set up a virtual environment
-- *ENTER* in Terminal
-  - `pip install --user virtualenv`
-  - Change into the directory of the cloned repository
-    - `cd user/yourName/my-project/`
-  - `virtualenv -p python3 my-project`
-  - `. path/to/my-project/bin/activate`
-- To deactivate the virtualenv
-  - *ENTER* in Terminal
-    - `deactivate`
 
 <div id='run'/>
 
