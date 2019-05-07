@@ -237,7 +237,7 @@ if __name__ == '__main__':
                         isNew = True
         else:
             print("Please enter either new or existing.")
-    if not root.attrib.get("config-port") and not root.attrib.get("printer-port") and not root.attrib.get('lable-copies') and root.attrib.get('href'):
+    if not root.attrib.get("config-port") and not root.attrib.get("printer-port") and root.attrib.get('label-copies') and not root.attrib.get('href'):
         print("Getting available COM ports to choose from.")
         # Gets the COM Port
         devices = getDeviceLocation()
@@ -305,7 +305,6 @@ if __name__ == '__main__':
     for file in filesInDir:
         scripts.get("scripts").append([count, file])
         count += 1
-        
     scriptss = scripts.get("scripts")
     scriptsToSelect = dictToDict(scriptss, scriptsToSelect)
     while inp3:
@@ -331,7 +330,6 @@ if __name__ == '__main__':
     for file in filesInDir:
         params.get("params").append([count3, file])
         count3 += 1
-    
     paramss = params.get("params")
     paramsToSelect = dictToDict(paramss, paramsToSelect)
     while inp5:
