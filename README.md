@@ -13,17 +13,9 @@
 
 ## How to download the script
 - *ENTER* in Terminal
-<<<<<<< HEAD
   - `git clone https://github.com/tmeserve/ProvisioningScript.git`
 - Switch to `nocups` branch
   - `git checkout nocups`
-=======
-
-`git clone https://github.com/tmeserve/ProvisioningScript.git`
-
-- Switch into `nocups` branch
-
-`git checkout nocups`
 
 <div id='prereq'/>
 
@@ -70,7 +62,6 @@
 ## Running the Script
 - *ENTER* in Terminal
   - Change into the directory of the cloned repository
-  
     - `cd user/yourName/my-project`
   - `python3.7 runner.py`
 
