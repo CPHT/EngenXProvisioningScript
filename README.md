@@ -39,6 +39,8 @@
       - `brew install msodbcsql17 mssql-tools`
   - Install IOgear GUC232A USB to serial adapter driver (optional)
     - https://www.iogear.com/support/dm/driver/GUC232A
+  - or
+    - http://www.prolific.com.tw/US/ShowProduct.aspx?p_id=229&pcid=41
 
 <div id='printermac'/>
 
